@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GCDB>
+  <Version>"1.0"</Version>
+  <PanelId>jdi-dualdsi-video</PanelId>
+  <PanelH>jdi_dualdsi_video</PanelH>
+  <PanelEntry>
+	
+	<!-- Panel configuration -->
+	<PanelName>"Dual 0 video mode dsi panel"</PanelName> 
+	<PanelController>"mdss_dsi0"</PanelController> 
+	<PanelInterface>10</PanelInterface> 
+	<PanelType>0</PanelType> 
+	<PanelDestination>"DISPLAY_1"</PanelDestination>
+	<PanelOrientation>0</PanelOrientation>	
+	<PanelFrameRate>60</PanelFrameRate> 
+	<PanelChannelId>0</PanelChannelId> 
+	<DSIVirtualChannelId>0</DSIVirtualChannelId> 
+	<PanelBroadcastMode>0</PanelBroadcastMode>
+	<DSIStream>0</DSIStream>
+	<PanelBroadcastMode>1</PanelBroadcastMode>
+	<PanelOperatingMode>1</PanelOperatingMode>
+	<PanelCompatible>"qcom,mdss-dsi-panel"</PanelCompatible>
+	<InterleaveMode>0</InterleaveMode>
+	
+	<!-- Panel Resolution -->
+	<PanelWidth>1280</PanelWidth> 
+	<PanelHeight>1440</PanelHeight> 
+	<HFrontPorch>120</HFrontPorch> 
+	<HBackPorch>44</HBackPorch> 
+	<HPulseWidth>16</HPulseWidth> 
+	<HSyncSkew>0</HSyncSkew> 
+	<VBackPorch>4</VBackPorch> 
+	<VFrontPorch>8</VFrontPorch> 
+	<VPulseWidth>4</VPulseWidth> 
+	<HLeftBorder>0</HLeftBorder> 
+	<HRightBorder>0</HRightBorder> 
+	<VTopBorder>0</VTopBorder> 
+	<VBottomBorder>0</VBottomBorder> 
+	
+	<!-- Panel Color Information -->
+	<ColorFormat>24</ColorFormat> 
+	<ColorOrder>0</ColorOrder> 
+	<UnderFlowColor>0xff</UnderFlowColor>  
+	<BorderColor>0</BorderColor>
+	
+	<!-- Panel Command information -->
+	<OnCommand>"0x05, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x01, 0x00,
+		   0x15, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0x3a, 0x77,
+		   0x39, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x05, 0x2a, 0x00, 0x00, 0x04, 0xff,
+		   0x39, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x05, 0x2b, 0x00, 0x00, 0x05, 0x9f,
+		   0x15, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0x35, 0x00,
+		   0x39, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x03, 0x44, 0x00, 0x00,
+		   0x15, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0x51, 0xff,
+		   0x15, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0x53, 0x24,
+		   0x15, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0x55, 0x00,
+		   0x05, 0x01, 0x00, 0x00, 0x78, 0x00, 0x01, 0x11,
+		   0x23, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0xb0, 0x00,
+		   0x29, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0xb3, 0x14,
+		   0x29, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x14, 0xce, 0x7d, 0x40, 0x48, 0x56, 0x67, 0x78, 0x88, 0x98, 0xa7, 0xb5, 0xc3, 0xd1, 0xde, 0xe9, 0xf2, 0xfa, 0xff, 0x04, 0x00,
+		   0x23, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0xb0, 0x03,
+				0x05, 0x01, 0x00, 0x00, 0x32, 0x00, 0x01, 0x29"</OnCommand> 
+	<OffCommand>"0x05, 0x01, 0x00, 0x00, 0x32, 0x00, 0x02, 0x28, 0x00,
+				 0x05, 0x01, 0x00, 0x00, 0x78, 0x00, 0x02, 0x10, 0x00"</OffCommand> 
+	<OnCommandState>0</OnCommandState> 
+	<OffCommandState>1</OffCommandState> 
+
+	<!-- Video mode panel information -->
+	<HSyncPulse>0</HSyncPulse> 
+	<HFPPowerMode>0</HFPPowerMode> 
+	<HBPPowerMode>0</HBPPowerMode> 
+	<HSAPowerMode>0</HSAPowerMode> 
+	<BLLPEOFPowerMode>1</BLLPEOFPowerMode> 
+	<BLLPPowerMode>1</BLLPPowerMode> 
+	<TrafficMode>1</TrafficMode>
+	<DMADelayAfterVsync>0</DMADelayAfterVsync>	
+	<BLLPEOFPower>0x9</BLLPEOFPower>
+	
+	<!-- Lane Configuration -->
+	<DSILanes>4</DSILanes>
+	<DSILaneMap>0</DSILaneMap>
+	<Lane0State>1</Lane0State>
+	<Lane1State>1</Lane1State>
+	<Lane2State>1</Lane2State>
+	<Lane3State>1</Lane3State>
+	
+	<!-- Panel Timing -->
+	<PanelTimings>"0xcd, 0x32, 0x22, 0x00, 0x60, 0x64, 0x26, 0x34,  0x29, 0x03, 0x04, 0x00"</PanelTimings>
+	<DSIMDPTrigger>0x0</DSIMDPTrigger>
+	<DSIDMATrigger>0x04</DSIDMATrigger>
+	<TClkPost>0x03</TClkPost>
+	<TClkPre>0x27</TClkPre>
+	
+	<!-- Backlight -->
+	<BLInterfaceType>1</BLInterfaceType>
+	<BLMinLevel>1</BLMinLevel>
+	<BLMaxLevel>4095</BLMaxLevel>
+	<BLStep>100</BLStep>
+	<BLPMICModel>"PMIC_8941"</BLPMICModel>
+	<BLPMICControlType>1</BLPMICControlType>
+
+	<!-- Panel Reset Sequence -->
+	<ResetSequence>
+		<PinState1>1</PinState1>
+		<PulseWidth1>20</PulseWidth1>
+		<PinState2>0</PinState2>
+		<PulseWidth2>200</PulseWidth2>
+		<PinState3>1</PinState3>
+		<PulseWidth3>20</PulseWidth3>
+		<EnableBit>2</EnableBit>
+	</ResetSequence>
+	
+  </PanelEntry>
+</GCDB>
+

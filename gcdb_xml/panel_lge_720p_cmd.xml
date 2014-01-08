@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GCDB>
+  <Version>"1.0"</Version>
+  <PanelId>lge-720p-cmd</PanelId>
+  <PanelH>lge_720p_cmd</PanelH>
+  <PanelEntry>
+	
+	<!-- Panel configuration -->
+	<PanelName>"lge 720p command mode dsi panel"</PanelName> 
+	<PanelController>"mdss_dsi0"</PanelController> 
+	<PanelInterface>11</PanelInterface> 
+	<PanelType>1</PanelType> 
+	<PanelDestination>"DISPLAY_1"</PanelDestination>
+	<PanelFrameRate>60</PanelFrameRate> 
+	<PanelChannelId>0</PanelChannelId> 
+	<PanelBroadcastMode>0</PanelBroadcastMode>
+	<!-- Optional Panel configuration -->
+	<!--BitClockFrequency>0</BitClockFrequency -->	
+	<DSIStream>0</DSIStream>
+	<PanelCompatible>"qcom,mdss-dsi-panel"</PanelCompatible>
+	<InterleaveMode>0</InterleaveMode>
+	
+	<!-- Panel Resolution -->
+	<PanelWidth>768</PanelWidth> 
+	<PanelHeight>1280</PanelHeight> 
+	<HFrontPorch>26</HFrontPorch> 
+	<HBackPorch>26</HBackPorch> 
+	<HPulseWidth>26</HPulseWidth> 
+	<HSyncSkew>0</HSyncSkew> 
+	<VBackPorch>2</VBackPorch> 
+	<VFrontPorch>2</VFrontPorch> 
+	<VPulseWidth>2</VPulseWidth> 
+	<HLeftBorder>0</HLeftBorder> 
+	<HRightBorder>0</HRightBorder> 
+	<VTopBorder>0</VTopBorder> 
+	<VBottomBorder>0</VBottomBorder> 
+	<!-- Optional Panel resolution configuration -->
+	<!--HActiveRes>0</HActiveRes> 
+	<VActiveRes>100</VActiveRes> 
+	<InvertDataPolarity>0</InvertDataPolarity>  
+	<InvertVsyncPolarity>0</InvertVsyncPolarity>  
+	<InvertHsyncPolarity>0</InvertHsyncPolarity -->  
+	
+	<!-- Panel Color Information -->
+	<ColorFormat>24</ColorFormat> 
+	<ColorOrder>0</ColorOrder> 
+	<UnderFlowColor>0xff</UnderFlowColor>  
+	<BorderColor>0</BorderColor>
+	<!-- Optional Panel color information only for non byte aligned format-->
+	<!-- PixelPacking>0</PixelPacking>  
+	<PixelAlignment>0</PixelAlignment -->  
+	
+	<!-- Panel Command information -->
+	<OnCommand>"0x05, 0x01, 0x00, 0x00, 0x78, 0x00, 0x02, 0x11, 0x00,
+				0x15, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0x36, 0x00,
+				0x05, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0x29, 0x00,
+				0x15, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0x53, 0x24,
+				0x15, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0x35, 0x00"</OnCommand> 
+	<OffCommand>"0x05, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0x34, 0x00,
+				 0x05, 0x01, 0x00, 0x00, 0x78, 0x00, 0x02, 0x10, 0x00 
+				0x05, 0x01, 0x00, 0x00, 0x78, 0x00, 0x02, 0x28, 0x00,
+				 0x15, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0x53, 0x00"</OffCommand>
+	<OnCommandState>0</OnCommandState> 
+	<OffCommandState>1</OffCommandState> 
+
+	<!-- Video mode panel information -->
+	<HSyncPulse>0</HSyncPulse> 
+	<HFPPowerMode>0</HFPPowerMode> 
+	<HBPPowerMode>0</HBPPowerMode> 
+	<HSAPowerMode>0</HSAPowerMode> 
+	<BLLPEOFPowerMode>1</BLLPEOFPowerMode> 
+	<BLLPPowerMode>1</BLLPPowerMode> 
+	<TrafficMode>1</TrafficMode>
+	<DMADelayAfterVsync>0</DMADelayAfterVsync>	
+	<BLLPEOFPower>0x9</BLLPEOFPower>
+	
+	<!-- Lane Configuration -->
+	<DSILanes>4</DSILanes>
+	<DSILaneMap>0</DSILaneMap>
+	<Lane0State>1</Lane0State>
+	<Lane1State>1</Lane1State>
+	<Lane2State>1</Lane2State>
+	<Lane3State>1</Lane3State>
+	
+	<!-- Panel Timing -->
+	<PanelTimings>"0x6e, 0x26, 0x1b, 0x00, 0x35, 0x34, 0x20, 0x28, 0x17, 0x03, 0x04, 0x00"</PanelTimings>
+	<DSIMDPTrigger>0</DSIMDPTrigger>
+	<DSIDMATrigger>4</DSIDMATrigger>
+	<TClkPost>0x20</TClkPost>
+	<TClkPre>0x2a</TClkPre>
+	
+	<!--- command mode panel -->
+	<TECheckEnable>1</TECheckEnable>
+	<TEPinSelect>1</TEPinSelect>
+	<TEUsingTEPin>1</TEUsingTEPin>
+	<TEvSyncRdPtrIrqLine>0x2c</TEvSyncRdPtrIrqLine>
+	<TEvSyncContinuesLines>0x3c</TEvSyncContinuesLines>
+	<TEDCSCommand>1</TEDCSCommand>	
+	
+	<!-- Backlight -->
+	<BLMinLevel>1</BLMinLevel>
+	<BLMaxLevel>255</BLMaxLevel>
+	<BLPMICControlType>0</BLPMICControlType>
+	<BLPMICBankSelect>8</BLPMICBankSelect>
+	<BLPMICPWMFrequency>100</BLPMICPWMFrequency>
+	
+  </PanelEntry>
+</GCDB>
+

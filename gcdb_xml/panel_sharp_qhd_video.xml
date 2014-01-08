@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GCDB>
+  <Version>"1.0"</Version>
+  <PanelId>sharp-qhd-video</PanelId>
+  <PanelH>sharp_qhd_video</PanelH>
+  <PanelEntry>
+	
+	<!-- Panel configuration -->
+	<PanelName>"sharp QHD LS043T1LE01 video mode dsi panel"</PanelName> 
+	<PanelController>"mdss_dsi0"</PanelController> 
+	<PanelInterface>10</PanelInterface> 
+	<PanelType>0</PanelType> 
+	<PanelDestination>"DISPLAY_1"</PanelDestination>
+	<PanelOrientation>0</PanelOrientation>	
+	<PanelFrameRate>60</PanelFrameRate> 
+	<PanelChannelId>0</PanelChannelId> 
+	<DSIVirtualChannelId>0</DSIVirtualChannelId> 
+	<PanelBroadcastMode>0</PanelBroadcastMode>
+	<DSIStream>0</DSIStream>
+	<PanelCompatible>"qcom,mdss-dsi-panel"</PanelCompatible>
+	<InterleaveMode>0</InterleaveMode>
+	
+	<!-- Panel Resolution -->
+	<PanelWidth>540</PanelWidth> 
+	<PanelHeight>960</PanelHeight> 
+	<HFrontPorch>48</HFrontPorch> 
+	<HBackPorch>80</HBackPorch> 
+	<HPulseWidth>32</HPulseWidth> 
+	<HSyncSkew>0</HSyncSkew> 
+	<VBackPorch>15</VBackPorch> 
+	<VFrontPorch>3</VFrontPorch> 
+	<VPulseWidth>10</VPulseWidth> 
+	<HLeftBorder>0</HLeftBorder> 
+	<HRightBorder>0</HRightBorder> 
+	<VTopBorder>0</VTopBorder> 
+	<VBottomBorder>0</VBottomBorder> 
+	
+	<!-- Panel Color Information -->
+	<ColorFormat>24</ColorFormat> 
+	<ColorOrder>2</ColorOrder> 
+	<UnderFlowColor>0xff</UnderFlowColor>  
+	<BorderColor>0</BorderColor>
+	
+	<!-- Panel Command information -->
+	<OnCommand>"0x05, 0x01, 0x00, 0x00, 0x32, 0x00, 0x02, 0x01, 0x00,
+					0x05, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0x11, 0x00,
+					0x15, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0x53, 0x2c,
+					0x15, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0x51, 0xff,
+					0x05, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0x29, 0x00,
+					0x15, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0xae, 0x03,
+					0x15, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0x3a, 0x77"</OnCommand> 
+	<OffCommand>"0x05, 0x01, 0x00, 0x00, 0x0a, 0x00, 0x02, 0x28, 0x00,
+					0x05, 0x01, 0x00, 0x00, 0x78, 0x00, 0x02, 0x10, 0x00"</OffCommand> 
+	<OnCommandState>0</OnCommandState> 
+	<OffCommandState>1</OffCommandState> 
+
+	<!-- Video mode panel information -->
+	<HSyncPulse>1</HSyncPulse> 
+	<HFPPowerMode>0</HFPPowerMode> 
+	<HBPPowerMode>0</HBPPowerMode> 
+	<HSAPowerMode>0</HSAPowerMode> 
+	<BLLPEOFPowerMode>1</BLLPEOFPowerMode> 
+	<BLLPPowerMode>1</BLLPPowerMode> 
+	<TrafficMode>0</TrafficMode>
+	<DMADelayAfterVsync>0</DMADelayAfterVsync>	
+	<BLLPEOFPower>0x9</BLLPEOFPower>
+	
+	<!-- Lane Configuration -->
+	<DSILanes>2</DSILanes>
+	<DSILaneMap>0</DSILaneMap>
+	<Lane0State>1</Lane0State>
+	<Lane1State>1</Lane1State>
+	<Lane2State>0</Lane2State>
+	<Lane3State>0</Lane3State>
+	
+	<!-- Panel Timing -->
+	<PanelTimings>"0x46, 0x1d, 0x20, 0x00, 0x39, 0x3a, 0x21, 0x21, 0x32, 0x03, 0x04, 0x00"</PanelTimings>
+	<DSIMDPTrigger>4</DSIMDPTrigger>
+	<DSIDMATrigger>4</DSIDMATrigger>
+	<TClkPost>0x04</TClkPost>
+	<TClkPre>0x1c</TClkPre>
+	
+	<!-- Backlight -->
+	<BLInterfaceType>1</BLInterfaceType>
+	<BLMinLevel>1</BLMinLevel>
+	<BLMaxLevel>4095</BLMaxLevel>
+	<BLStep>100</BLStep>
+	<BLPMICModel>"PMIC_8941"</BLPMICModel>
+	<BLPMICControlType>1</BLPMICControlType>
+	
+  </PanelEntry>
+</GCDB>
+
